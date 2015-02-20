@@ -45,4 +45,14 @@ public class ArrayListInt
         int[] arrayACero = new int[0];
         array = arrayACero;
     }
+    
+    public boolean contains(int elemento)
+    {
+        boolean hayElemento = false;
+        if(array.length - 1 >= elemento)
+        {
+            hayElemento = true;
+        }
+        return hayElemento;
+    }
 }
