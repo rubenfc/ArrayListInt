@@ -69,4 +69,19 @@ public class ArrayListInt
         }
         return valor;
     }
+    
+    public int indexOf(int elemento)
+    {
+        int cont = 0;
+        int indice = -1;
+        while(cont < array.length )
+        {
+            if(array[cont] == elemento)
+            {
+                indice = cont;
+            }
+            cont++;
+        }
+        return indice;
+    }
 }

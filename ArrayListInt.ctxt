@@ -11,4 +11,6 @@ comment4.params=elemento
 comment4.target=boolean\ contains(int)
 comment5.params=index
 comment5.target=int\ get(int)
-numComments=6
+comment6.params=elemento
+comment6.target=int\ indexOf(int)
+numComments=7
