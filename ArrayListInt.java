@@ -28,15 +28,11 @@ public class ArrayListInt
         array = arrayNuevo;
     }
     
-    public void add(int index, int elemento)
+    public void set(int index, int elemento)
     {
         if(array.length  > index)
         {
             array[index] = elemento;
-        }
-        else
-        {
-            System.out.println("error, el indice intruducido, es mayor que el tamaño de la colección");
         }
     }
     
@@ -83,5 +79,15 @@ public class ArrayListInt
             cont++;
         }
         return indice;
+    }
+    
+    public boolean isEmpty()
+    {
+        boolean noElementos = false;
+        if(array.length == 0)
+        {
+            noElementos = true;
+        }
+        return noElementos;
     }
 }
