@@ -27,4 +27,16 @@ public class ArrayListInt
         arrayNuevo[array.length] = elemento;
         array = arrayNuevo;
     }
+    
+    public void add(int index, int elemento)
+    {
+        if(array.length - 1 >= index)
+        {
+            array[index] = elemento;
+        }
+        else
+        {
+            System.out.println("error, el indice intruducido, es mayor que el tamaño de la colección");
+        }
+    }
 }

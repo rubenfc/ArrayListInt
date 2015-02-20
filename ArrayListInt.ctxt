@@ -3,4 +3,6 @@ comment0.params=
 comment0.target=ArrayListInt()
 comment1.params=elemento
 comment1.target=void\ add(int)
-numComments=2
+comment2.params=index\ elemento
+comment2.target=void\ add(int,\ int)
+numComments=3
