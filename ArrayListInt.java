@@ -39,4 +39,10 @@ public class ArrayListInt
             System.out.println("error, el indice intruducido, es mayor que el tamaño de la colección");
         }
     }
+    
+    public void clear()
+    {
+        int[] arrayACero = new int[0];
+        array = arrayACero;
+    }
 }
