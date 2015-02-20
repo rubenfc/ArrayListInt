@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayListInt()
+comment1.params=elemento
+comment1.target=void\ add(int)
+numComments=2
