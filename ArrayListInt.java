@@ -30,7 +30,7 @@ public class ArrayListInt
     
     public void add(int index, int elemento)
     {
-        if(array.length - 1 >= index)
+        if(array.length  > index)
         {
             array[index] = elemento;
         }
@@ -49,10 +49,24 @@ public class ArrayListInt
     public boolean contains(int elemento)
     {
         boolean hayElemento = false;
-        if(array.length - 1 >= elemento)
+        if(array.length  > elemento)
         {
             hayElemento = true;
         }
         return hayElemento;
+    }
+    
+    public int get(int index)
+    {
+        int valor = 0;
+        if(array.length  > index)
+        {
+            valor = array[index];
+        }
+        else
+        {
+            valor = -1;
+        }
+        return valor;
     }
 }

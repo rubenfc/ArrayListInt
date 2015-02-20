@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ clear()
 comment4.params=elemento
 comment4.target=boolean\ contains(int)
-numComments=5
+comment5.params=index
+comment5.target=int\ get(int)
+numComments=6
