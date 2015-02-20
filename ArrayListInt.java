@@ -28,6 +28,30 @@ public class ArrayListInt
         array = arrayNuevo;
     }
     
+    public void add(int index, int elemento)
+    {
+        int[] arrayNuevo = new int[array.length +1];
+        if(array.length  > index)
+        { 
+            int cont = 0;
+            int indice = 0;
+            while(cont < array.length)
+            {
+                if(cont == index)
+                {
+                    arrayNuevo[indice] = elemento;
+                }
+                else
+                {
+                    arrayNuevo[indice] = array[cont];
+                }
+                cont++;
+                indice++;
+            }
+        }
+        array = arrayNuevo;
+    }
+    
     public void set(int index, int elemento)
     {
         if(array.length  > index)
@@ -89,5 +113,34 @@ public class ArrayListInt
             noElementos = true;
         }
         return noElementos;
+    }
+    
+    public int remove(int index)
+    {
+        int elemento  = -1;
+        int cont = 0;
+        int[] arrayNuevo =  new int[array.length + 1];
+        if(array.length > index && index > 0)
+        {
+            while(cont < array.length)
+            {
+                if(index == cont)
+                {
+                    elemento = array[cont];
+                }
+                else
+                {
+                    arrayNuevo[cont] = array[cont];
+                }
+                cont++;
+            }
+        }
+        return elemento;
+    }
+    
+    public int size()
+    {
+        int tamaño = array.length;
+        return tamaño;
     }
 }
